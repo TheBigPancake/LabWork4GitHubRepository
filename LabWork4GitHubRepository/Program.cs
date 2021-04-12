@@ -4,6 +4,7 @@ namespace LabWork4GitHubRepository
 {
     class Program
     {
+        private static RunebleClass[] classes = { };
         static void Main(string[] args)
         {
             Menu();
@@ -23,10 +24,9 @@ namespace LabWork4GitHubRepository
         static private bool Switch(int key)
         {
             Console.Clear();
-            switch (key)
-            {
-                case 0: return false;
-            }
+            if (key == 0) 
+                return false;
+            classes[key - 1].Run();
             return true;
         }
     }
