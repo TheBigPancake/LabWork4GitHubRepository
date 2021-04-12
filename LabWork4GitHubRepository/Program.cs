@@ -1,15 +1,17 @@
 ﻿using LabWork4GitHubRepository.TestClass;
 using LabWork4GitHubRepository.Gorodensky;
 using System;
+using System.Collections.Generic;
 
 namespace LabWork4GitHubRepository
 {
     class Program
     {
-        private static RunebleClass[] classes = { new GorodenskyClass() };
-        private static RunebleClass[] classes = { new ATestClass()};
+        private static List<RunebleClass> classes = new List<RunebleClass>();
         static void Main(string[] args)
         {
+            classes.Add(new GorodenskyClass());
+            classes.Add(new ATestClass());
             Menu();
         }
 
