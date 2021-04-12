@@ -1,10 +1,11 @@
-﻿using System;
+﻿using LabWork4GitHubRepository.Gorodensky;
+using System;
 
 namespace LabWork4GitHubRepository
 {
     class Program
     {
-        private static RunebleClass[] classes = { };
+        private static RunebleClass[] classes = { new GorodenskyClass() };
         static void Main(string[] args)
         {
             Menu();
