@@ -18,10 +18,10 @@ namespace LabWork4GitHubRepository
                 Console.WriteLine("Работа с удаленными репозиториями\nВыбирете сообщение:");
                 Console.WriteLine("\t1) Сообщение Городенского Станислава");
                 Console.Write("\t0) выход\n>");
-            } while (Switch(int.Parse(Console.ReadLine())));
+            } while (ClearConsloeAndRunClass(int.Parse(Console.ReadLine())));
         }
 
-        static private bool Switch(int key)
+        static private bool ClearConsloeAndRunClass(int key)
         {
             Console.Clear();
             if (key == 0) 
