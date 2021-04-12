@@ -1,4 +1,5 @@
-﻿using LabWork4GitHubRepository.Gorodensky;
+﻿using LabWork4GitHubRepository.TestClass;
+using LabWork4GitHubRepository.Gorodensky;
 using System;
 
 namespace LabWork4GitHubRepository
@@ -6,6 +7,7 @@ namespace LabWork4GitHubRepository
     class Program
     {
         private static RunebleClass[] classes = { new GorodenskyClass() };
+        private static RunebleClass[] classes = { new ATestClass()};
         static void Main(string[] args)
         {
             Menu();
@@ -18,6 +20,7 @@ namespace LabWork4GitHubRepository
                 Console.Clear();
                 Console.WriteLine("Работа с удаленными репозиториями\nВыбирете сообщение:");
                 Console.WriteLine("\t1) Сообщение Городенского Станислава");
+                Console.WriteLine("\t2) Тестовое сообщение");
                 Console.Write("\t0) выход\n>");
             } while (ClearConsloeAndRunClass(int.Parse(Console.ReadLine())));
         }
